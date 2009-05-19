@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="syntax_highlight.css" type="text/css" charset="utf-8" />
+
+    <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <title>Class: Alien</title>
+  </head>
+  <body>
+    <div id="content">
+      <div class="section class Alien">
+  <h1 class="title">Class: Alien</h1>
+  <div class="section constants">
+  
+</div>  <div class="section visibilitygroup public">
+    <h1>Public Visibility</h1>
+      <div class="section methodsummary instance public">
+    <h1>Public Instance Method Summary</h1>
+<table class="summary">
+  
+    <tr>
+      <th class="signature">
+        <span class='name'><a href="#call_home-instance_method" title="#call_home">#call_home</a></span><span class='args'>(params = {})</span>
+        <span class='block'></span>
+        
+      </th>
+      <td class="docstring">
+        <p>
+Lets aliens fulfill their greatest wish.
+</p>
+
+        
+          <p class='returns'>
+            Returns: 
+              <span class='return_types'>
+                 <tt>String</tt>
+              </span>
+          </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <th class="signature">
+        <span class='name'><a href="#call_home_cached-instance_method" title="#call_home_cached">#call_home_cached</a></span><span class='args'>(params = {})</span>
+        <span class='block'></span>
+        
+      </th>
+      <td class="docstring">
+        <p>
+Cached version of call_home.
+</p>
+
+        
+          <p class='returns'>
+            Returns: 
+              <span class='return_types'>
+                 <tt>String</tt>
+              </span>
+          </p>
+        
+      </td>
+    </tr>
+  
+</table>
+  </div>
+<div class="section methoddetails instance public">
+  <h1>Public Instance Method Details</h1>
+  
+    <div class="method">
+      <div class="method_header">
+  <h3>call_home</h3>
+</div><div id="call_home-instance_method" class="section method">
+  <div class="details_title">
+  <div class='section methodsignature'>
+  <tt class='def'>
+    <span class='visibility'>public</span>
+    <span class='return_types'><tt>String</tt></span>
+    <span class='name'>call_home</span><span class='args'>(params = {})</span>
+    <span class='block'></span>
+  </tt>
+</div>
+
+</div><div class="section docstring">
+  <p>
+Lets aliens fulfill their greatest wish.
+</p>
+<p>
+Calling home is implemented using the magic remote call.
+</p>
+
+</div><div class="section tags">
+  <h2>Meta Tags</h2>
+  <div class="param">
+  <h3>Parameters:</h3>
+  <dl>
+  
+    
+      <dt>Options Hash <tt>params</tt></dt>
+<dd>
+  <div class="option">
+    <table>
+      <tr>
+        <th class="name">Key Name</th>
+        <th class="default">Default Value</th>
+        <th class="type">Accepted Types</th>
+        <th class="desc">Description</th>
+      </tr>
+      
+        <tr>
+          <td class="name">:planet</td>
+          <td class="default">
+            
+              <tt>Brodo Asogi</tt>
+            
+          </td>
+          <td class="type">[<tt>String</tt>, <tt>#to_s</tt>]</td>
+          <td class="desc"><p>
+(required) the planet we want to call
+</p>
+</td>
+        </tr>
+      
+        <tr>
+          <td class="name">:message</td>
+          <td class="default">
+            
+              <tt>N/A</tt>
+            
+          </td>
+          <td class="type">[<tt>String</tt>, <tt>#read</tt>]</td>
+          <td class="desc"><p>
+(required) the message we want to send
+</p>
+</td>
+        </tr>
+      
+    </table>
+  </div>
+</dd>
+
+    
+  
+  </dl>
+</div><div class="return">
+  <h3>Returns:</h3>
+  <dl>
+  
+    <dt>
+      
+        <span class='type'>[<tt>String</tt>]</span>
+      
+      
+        <span class='name'></span>
+      
+      
+    </dt>
+    <dd>
+      <span class='desc'><p>
+Response
+</p>
+</span>
+    </dd>
+  
+  </dl>
+</div>
+<div class="see">
+  <h3>See Also:</h3>
+  <dl>
+    <dt></dt>
+    <dd>
+      <span class='desc'>
+        <tt><a href="RemoteCall.html#remote-instance_method" title="RemoteCall#remote">RemoteCall#remote</a></tt>
+      </span>
+    </dd>
+  </dl>
+</div>
+
+</div><div class="section source">
+  <span>[<a class="source_link" href="#">View source</a>]</span>
+  <div class="source_code">
+    <table>
+      <tr>
+        <td>
+          <pre class="lines">
+
+
+17</pre>
+        </td>
+        <td>
+          <pre class="code"><span class="info file"># File 'lib/alien.rb', line 17</span>
+
+<span class='remote identifier id'>remote</span> <span class='symbol val'>:call_home</span>
+</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+    </div>
+  
+    <div class="method">
+      <div class="method_header">
+  <h3>call_home_cached</h3>
+</div><div id="call_home_cached-instance_method" class="section method">
+  <div class="details_title">
+  <div class='section methodsignature'>
+  <tt class='def'>
+    <span class='visibility'>public</span>
+    <span class='return_types'><tt>String</tt></span>
+    <span class='name'>call_home_cached</span><span class='args'>(params = {})</span>
+    <span class='block'></span>
+  </tt>
+</div>
+
+</div><div class="section docstring">
+  <p>
+Cached version of call_home
+</p>
+
+</div><div class="section tags">
+  <h2>Meta Tags</h2>
+  <div class="param">
+  <h3>Parameters:</h3>
+  <dl>
+  
+    
+      <dt>
+        <span class='type'>[<tt>Object</tt>]</span>
+        <span class='name'>params</span>
+        
+      </dt>
+      <dd>
+        <span class='desc'><p>
+as in Alien#response
+</p>
+</span>
+      </dd>
+    
+  
+  </dl>
+</div><div class="return">
+  <h3>Returns:</h3>
+  <dl>
+  
+    <dt>
+      
+        <span class='type'>[<tt>String</tt>]</span>
+      
+      
+        <span class='name'></span>
+      
+      
+    </dt>
+    <dd>
+      <span class='desc'><p>
+response
+</p>
+</span>
+    </dd>
+  
+  </dl>
+</div>
+<div class="see">
+  <h3>See Also:</h3>
+  <dl>
+    <dt></dt>
+    <dd>
+      <span class='desc'>
+        <tt><a href="#call_home-instance_method" title="Alien#call_home">Alien#call_home</a></tt>
+      </span>
+    </dd>
+  </dl>
+</div>
+
+</div><div class="section source">
+  <span>[<a class="source_link" href="#">View source</a>]</span>
+  <div class="source_code">
+    <table>
+      <tr>
+        <td>
+          <pre class="lines">
+
+
+17</pre>
+        </td>
+        <td>
+          <pre class="code"><span class="info file"># File 'lib/alien.rb', line 17</span>
+
+<span class='remote identifier id'>remote</span> <span class='symbol val'>:call_home</span>
+</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+    </div>
+  
+</div>
+  </div>
+
+</div>
+    </div>
+  </body>
+</html>

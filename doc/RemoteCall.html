@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="syntax_highlight.css" type="text/css" charset="utf-8" />
+
+    <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <title>Module: RemoteCall</title>
+  </head>
+  <body>
+    <div id="content">
+      <div class="section module RemoteCall">
+  <h1 class="title">Module: RemoteCall</h1>
+  <div class="section constants">
+  
+</div>  <div class="section visibilitygroup public">
+    <h1>Public Visibility</h1>
+      <div class="section methodsummary instance public">
+    <h1>Public Instance Method Summary</h1>
+<table class="summary">
+  
+    <tr>
+      <th class="signature">
+        <span class='name'><a href="#remote-instance_method" title="#remote">#remote</a></span><span class='args'>(name)</span>
+        <span class='block'></span>
+        
+      </th>
+      <td class="docstring">
+        <p>
+Test.
+</p>
+
+        
+          <p class='returns'>
+            Returns: 
+              <span class='return_types'>
+                 <tt>Foo</tt>
+              </span>
+          </p>
+        
+      </td>
+    </tr>
+  
+</table>
+  </div>
+<div class="section methoddetails instance public">
+  <h1>Public Instance Method Details</h1>
+  
+    <div class="method">
+      <div class="method_header">
+  <h3>remote</h3>
+</div><div id="remote-instance_method" class="section method">
+  <div class="details_title">
+  <div class='section methodsignature'>
+  <tt class='def'>
+    <span class='visibility'>public</span>
+    <span class='return_types'><tt>Foo</tt></span>
+    <span class='name'>remote</span><span class='args'>(name)</span>
+    <span class='block'></span>
+  </tt>
+</div>
+
+</div><div class="section docstring">
+  <p>
+Test.
+</p>
+<p>
+Generates a remote function call that magically works.
+</p>
+
+</div><div class="section tags">
+  <h2>Meta Tags</h2>
+  <div class="param">
+  <h3>Parameters:</h3>
+  <dl>
+  
+    
+      <dt>
+        <span class='type'>[<tt>Symbol</tt>, <tt>#to_sym</tt>]</span>
+        <span class='name'>name</span>
+        
+      </dt>
+      <dd>
+        <span class='desc'><p>
+The name of the remote call
+</p>
+</span>
+      </dd>
+    
+  
+  </dl>
+</div><div class="return">
+  <h3>Returns:</h3>
+  <dl>
+  
+    <dt>
+      
+        <span class='type'>[<tt>Foo</tt>]</span>
+      
+      
+        <span class='name'></span>
+      
+      
+    </dt>
+    <dd>
+      <span class='desc'></span>
+    </dd>
+  
+  </dl>
+</div>
+
+</div><div class="section source">
+  <span>[<a class="source_link" href="#">View source</a>]</span>
+  <div class="source_code">
+    <table>
+      <tr>
+        <td>
+          <pre class="lines">
+
+
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre>
+        </td>
+        <td>
+          <pre class="code"><span class="info file"># File 'lib/remote.rb', line 12</span>
+
+<span class='def def kw'>def</span> <span class='remote identifier id'>remote</span><span class='lparen token'>(</span><span class='name identifier id'>name</span><span class='rparen token'>)</span>
+  
+  <span class='define_method identifier id'>define_method</span> <span class='name identifier id'>name</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='params identifier id'>params</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='bitor op'>|</span>
+    <span class='comment val'># do remote function call</span>
+  <span class='end end kw'>end</span>
+  
+  <span class='define_method identifier id'>define_method</span> <span class='dstring node'>&quot;#{name}_cached&quot;</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='params identifier id'>params</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='bitor op'>|</span>
+    <span class='comment val'># cache lookup</span>
+    <span class='comment val'># rfc</span>
+  <span class='end end kw'>end</span>
+  
+<span class='end end kw'>end</span>
+</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+    </div>
+  
+</div>
+  </div>
+
+</div>
+    </div>
+  </body>
+</html>
